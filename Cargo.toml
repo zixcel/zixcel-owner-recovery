@@ -1,0 +1,33 @@
+[package]
+exclude = ["*.tgz", "**/*.tgz", "/registration/**", "/state/**", "/.local/**", "/.state/**", "/.data/**", "/secrets/**", "/credentials/**", "/.env", "/.env.production", "/.env.local", "/*.tgz", "/*.tar.gz", "/*.tar", "/*.zip", "/*.whl", "/*.crate", "/.ruff_cache/**", "/.mypy_cache/**", "/.tox/**", "/.nox/**", "/.hypothesis/**", "/.coverage", "/.coverage.*", "/htmlcov/**", "/lcov.info", "/junit.xml", "/*.profraw", "/*.profdata", "/*.egg-info/**", "/target/**", "/node_modules/**", "/dist/**", "/build/**", "/.cache/**", "/.pytest_cache/**", "/coverage/**"]
+name = "zixcel-owner-recovery"
+version = "0.10.0"
+edition = "2024"
+rust-version = "1.97"
+description = "Secret-free owner recovery and move ceremony for Zixcel"
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/zixcel/zixcel-owner-recovery"
+publish = ["zixcel-private"]
+
+[workspace]
+members = ["."]
+resolver = "3"
+
+[dependencies]
+crowsi-credential-authority-contracts = { version = "=0.10.0", registry = "ecosystem-private" }
+serde = { version = "=1.0.229", features = ["derive"] }
+sha2 = "=0.10.9"
+zixcel-contracts = { version = "=0.10.0", registry = "zixcel-private" }
+
+[dev-dependencies]
+serde_json = "=1.0.151"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+all = { level = "warn", priority = -1 }
+pedantic = { level = "warn", priority = -1 }
+unwrap_used = "deny"
+todo = "deny"
