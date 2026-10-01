@@ -42,7 +42,7 @@ dependencies = [
 name = "crowsi-credential-authority-contracts"
 version = "0.10.0"
 source = "sparse+https://ecosystem-private.invalid/cargo/index/"
-checksum = "60cc7ccd3e22238676be1f60e6611e5e575121f10b18cbd783be0d37dd9a3a46"
+checksum = "ebbb545ee6ab5125cdb6e02e129d7bb010481a508bfefcc6a4af5dc9088cdd93"
 dependencies = [
  "ed25519-dalek",
  "hex",
@@ -405,7 +405,7 @@ checksum = "e13c156562582aa81c60cb29407084cdb54c4164760106ab78e6c5b0858cf64e"
 name = "zixcel-contracts"
 version = "0.10.0"
 source = "sparse+https://zixcel-private.invalid/cargo/index/"
-checksum = "806f356b6b4f8767a592cb22d5a46cce52cd9fb501642edb8313091bc2f421a6"
+checksum = "519e09a4aa4f9d3f46eb5340bf66fc89422da139f1820ef8d6867c6c09ec4cee"
 dependencies = [
  "serde",
  "serde_json",
