@@ -1,20 +1,28 @@
 # zixcel-owner-recovery
 
-Secret-free orchestration for owner recovery and device movement. Zixcel owns
-the user-visible sequence and selectable receipt retention. Crowsi owns the
-mnemonic and approval key; iHAT owns identity recovery, replacement-device
-registration, epoch advancement and source-device/session revocation.
+Coordinate explicit owner-recovery and device-transfer steps without taking ownership of account records.
 
-The state document can be persisted owner-locally, but contains only public
-request/receipt metadata. The mnemonic, derived key, WebAuthn assertion and
-device private key have no field in this package.
+## What you can do
 
-The default move-receipt retention is 730 days and may be selected between one
-day and ten years. A completed source receipt is read-only, never invocable.
-Expiry makes it unavailable; permanent purge remains an explicit owner action.
+- Represent recovery choices and retained evidence.
+- Connect declared recovery and identity interfaces.
 
-## Package integration
+## Current scope
 
-The package is an independently consumable unit. Callers reference its documented
-interface through a versioned dependency and own application-specific composition
-and integration.
+Recovery requires the configured proof provider and authority approval. The workflow does not infer ownership or bypass verification.
+
+Package distribution is not activated by this documentation. Use the checked-in source and the declared dependency versions; published availability must be verified separately.
+
+## Getting started
+
+Install Rust 1.97 or newer and make the declared dependencies available. Use the configured private registry when a dependency is not distributed publicly. Run from this repository:
+
+```sh
+cargo test --locked
+```
+
+## Documentation and source
+
+[Usage guide](docs/getting-started.md)
+
+[Implementation and public interfaces](src) · [Contributing](CONTRIBUTING.md) · [Security reporting](SECURITY.md) · [License](LICENSE) · [Attribution notices](NOTICE)
