@@ -15,7 +15,7 @@ Package distribution is not activated by this documentation. Use the checked-in 
 
 ## Getting started
 
-Install Rust 1.97 or newer and make the declared dependencies available. Use the configured private registry when a dependency is not distributed publicly. Run from this repository:
+Install Rust 1.97 or newer and make the declared dependencies available. Resolve the declared dependencies from crates.io. Run from this repository:
 
 ```sh
 cargo test --locked
@@ -26,3 +26,5 @@ cargo test --locked
 [Usage guide](docs/getting-started.md)
 
 [Implementation and public interfaces](src) · [Contributing](CONTRIBUTING.md) · [Security reporting](SECURITY.md) · [License](LICENSE) · [Attribution notices](NOTICE)
+
+`zixcel-contracts` resolves version `0.10.0` from crates.io. The credential-authority contracts also resolve version `0.10.0` from crates.io. No private registry is needed for these dependencies.

@@ -41,8 +41,8 @@ dependencies = [
 [[package]]
 name = "crowsi-credential-authority-contracts"
 version = "0.10.0"
-source = "sparse+https://ecosystem-private.invalid/cargo/index/"
-checksum = "ebbb545ee6ab5125cdb6e02e129d7bb010481a508bfefcc6a4af5dc9088cdd93"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5cc8296223b930e5f56fbe025d2fae7261ae82c27ea1308eb45470488ac17df5"
 dependencies = [
  "ed25519-dalek",
  "hex",
@@ -169,8 +169,8 @@ checksum = "7f24254aa9a54b5c858eaee2f5bccdb46aaf0e486a595ed5fd8f86ba55232a70"
 [[package]]
 name = "ihat-identity-assertion-contracts"
 version = "0.10.0"
-source = "sparse+https://ecosystem-private.invalid/cargo/index/"
-checksum = "e31a186424c6aeec36ba00e8ee758a83d26b7881c9b008bd64871539ce2adb64"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8a20313a089b5a56248f939e572c33b2d44de7083ea43e9ff4f732868daf1f38"
 dependencies = [
  "ed25519-dalek",
  "hex",
@@ -404,8 +404,8 @@ checksum = "e13c156562582aa81c60cb29407084cdb54c4164760106ab78e6c5b0858cf64e"
 [[package]]
 name = "zixcel-contracts"
 version = "0.10.0"
-source = "sparse+https://zixcel-private.invalid/cargo/index/"
-checksum = "519e09a4aa4f9d3f46eb5340bf66fc89422da139f1820ef8d6867c6c09ec4cee"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4fec834a29d3d28ac989cdaaed0168db44ecfe193cf5bcb40b8b6e75b5f94083"
 dependencies = [
  "serde",
  "serde_json",
