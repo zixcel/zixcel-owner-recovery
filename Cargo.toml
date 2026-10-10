@@ -15,10 +15,10 @@ members = ["."]
 resolver = "3"
 
 [dependencies]
-crowsi-credential-authority-contracts = { version = "=0.10.0", registry = "ecosystem-private" }
+crowsi-credential-authority-contracts = { version = "=0.10.0" }
 serde = { version = "=1.0.229", features = ["derive"] }
 sha2 = "=0.10.9"
-zixcel-contracts = { version = "=0.10.0", registry = "zixcel-private" }
+zixcel-contracts = { version = "=0.10.0" }
 
 [dev-dependencies]
 serde_json = "=1.0.151"
