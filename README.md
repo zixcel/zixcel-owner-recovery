@@ -11,7 +11,7 @@ Coordinate explicit owner-recovery and device-transfer steps without taking owne
 
 Recovery requires the configured proof provider and authority approval. The workflow does not infer ownership or bypass verification.
 
-Package distribution is not activated by this documentation. Use the checked-in source and the declared dependency versions; published availability must be verified separately.
+This is an independently packaged Rust library. Cargo dependencies are resolved from crates.io; runtime authority, network and storage configuration remain caller-owned.
 
 ## Getting started
 
@@ -27,4 +27,4 @@ cargo test --locked
 
 [Implementation and public interfaces](src) · [Contributing](CONTRIBUTING.md) · [Security reporting](SECURITY.md) · [License](LICENSE) · [Attribution notices](NOTICE)
 
-`zixcel-contracts` resolves version `0.10.0` from crates.io. The credential-authority contracts also resolve version `0.10.0` from crates.io. No private registry is needed for these dependencies.
+`zixcel-contracts` resolves version `0.10.1` from crates.io. The credential-authority contracts also resolve version `0.10.0` from crates.io. No private registry is needed for these dependencies.
