@@ -30,3 +30,6 @@ cargo test --locked
 `zixcel-contracts` resolves version `0.10.1` from crates.io. The credential-authority contracts also resolve version `0.10.0` from crates.io. No private registry is needed for these dependencies.
 
 [OSS responsibility and source completion](docs/oss-source-contract.md) defines the supported package boundary and required acceptance. It does not declare unexecuted source, distribution or production checks complete.
+
+Dependency updates: [repository policy](docs/dependency-updates.md).
+Registry releases: [version tags and GitHub OIDC](docs/registry-release.md).
