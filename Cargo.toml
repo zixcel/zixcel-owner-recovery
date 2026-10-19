@@ -1,4 +1,6 @@
 [package]
+categories = ["authentication"]
+keywords = ["account-recovery", "authentication", "device-management", "security", "rust"]
 include = ["src/**", "tests/**", "schemas/**", "docs/**", "Cargo.toml", "Cargo.lock", "README.md", "LICENSE*", "NOTICE*"]
 exclude = ["*.tgz", "**/*.tgz", "/registration/**", "/state/**", "/.local/**", "/.state/**", "/.data/**", "/secrets/**", "/credentials/**", "/.env", "/.env.production", "/.env.local", "/*.tgz", "/*.tar.gz", "/*.tar", "/*.zip", "/*.whl", "/*.crate", "/.ruff_cache/**", "/.mypy_cache/**", "/.tox/**", "/.nox/**", "/.hypothesis/**", "/.coverage", "/.coverage.*", "/htmlcov/**", "/lcov.info", "/junit.xml", "/*.profraw", "/*.profdata", "/*.egg-info/**", "/target/**", "/node_modules/**", "/dist/**", "/build/**", "/.cache/**", "/.pytest_cache/**", "/coverage/**"]
 name = "zixcel-owner-recovery"
