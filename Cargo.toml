@@ -18,7 +18,7 @@ resolver = "3"
 [dependencies]
 crowsi-credential-authority-contracts = { version = "=0.10.0" }
 serde = { version = "=1.0.229", features = ["derive"] }
-sha2 = "=0.10.9"
+sha2 = "=0.11.1"
 zixcel-contracts = { version = "=0.10.1" }
 
 [dev-dependencies]
