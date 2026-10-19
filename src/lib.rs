@@ -297,7 +297,14 @@ impl OwnerMoveReceiptV1 {
             schema: OWNER_MOVE_PURGE_RECEIPT_SCHEMA_V1.into(),
             receipt_id: self.receipt_id.clone(),
             purged_at_epoch_s: now_epoch_s,
-            purge_digest_sha256: format!("sha256:{:x}", digest.finalize()),
+            purge_digest_sha256: (digest.finalize()).iter().fold(
+                String::from("sha256:"),
+                |mut encoded, byte| {
+                    use std::fmt::Write as _;
+                    write!(encoded, "{byte:02x}").expect("writing to String cannot fail");
+                    encoded
+                },
+            ),
         })
     }
 }
